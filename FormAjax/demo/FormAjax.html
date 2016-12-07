@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+    <head>
+        <title> Form Ajax </title>
+        <link rel = "stylesheet" href = "FormAjax.css">
+        <script language = "javascript" src = "FormAjax.js"> </script> 
+        <script src = "jquery-3.1.1.min.js"> </script> 
+    </head>
+
+    <body>
+        <form action="http://localhost/demo/index.php" method="POST">
+        <table>
+            <!-- Username -->
+            <tr>
+                <td> <b> Username: </b> </td>
+                <td class = "td_input"> <input type = "text" class = "input_infomation" id = "user_name" name = "user_name" onBlur = "check_format_username()"/> </td>
+                <td> 
+                     <div id = "username_error" class = "error" >
+                     </div>
+                </td>
+            </tr>
+            <!-- End Username -->
+
+            <!-- Password -->
+            <tr>
+                <td> <b> Password: </b> </td>
+                <td class = "td_input"> <input type = "password" class = "input_infomation" id = "password" name = "password" onBlur = "check_format_password()"/> </td>
+                <td> <div id = "password_error" class = "error" > </div> </td>
+            </tr>
+            <!-- End Password -->
+
+            <!-- Email -->
+            <tr>
+                <td> <b> Email: </b> </td>
+                <td class = "td_input"> <input type = "email" class = "input_infomation" id = "email" name = "email" onBlur = "check_format_email()"/> </td>
+                <td> <div id = "email_error" class = "error" > </div> </td>
+            </tr>
+            <!-- End Email -->
+            
+            <!-- Birthday -->
+            <tr class = "tr_calendar">
+                <td> <b> Birthday: </b> </td>
+                <td>    
+                    <textview id = "text_date_time" id = "birthday" name = "birthday" onClick = "show_today()"> </textview>
+                    <img src = "Image/choose.png" class = "img_choose" alt = "Choose Calendar" onClick = "show_today()"/>
+                    <div class = "bound">
+                        <div class = "hide" id = "bound_date_time">
+                            <div class = "direct">    
+                                <img src = "Image/pre_month.png" class = "btn_direct" onClick = "back_year()" alt = "Quay về năm trước"/>
+                                <img src = "Image/pre_day.png" class = "btn_direct" onClick = "back_month()" alt = "Quay về tháng trước"/>
+                                <select id = "month" class = "select_month" onChange = "select_month()">
+                                    <option value = "0"> January </option>
+                                    <option value = "1"> February </option>
+                                    <option value = "2"> March </option
+                                    <option value = "3"> April </option>
+                                    <option value = "4"> May </option>
+                                    <option value = "5"> June </option>
+                                    <option value = "6"> July </option>
+                                    <option value = "7"> August </option>
+                                    <option value = "8"> September </option>
+                                    <option value = "9"> October </option>
+                                    <option value = "10"> November </option>
+                                    <option value = "11"> December </option>
+                                </select>
+                                <select id = "year" class = "select_year" onChange = "select_year()">
+                                    <option> 1930 </option>
+                                </select>
+                            </div>
+                        <img src = "Image/next_day.png" class = "btn_direct" onClick = "next_month()" alt = "Tới tháng sau"/>
+                        <img src = "Image/next_month.png" class = "btn_direct" onClick = "next_year()" alt = "Tới năm sau"/>
+
+ 
+                        <div class = "bound_day_in_week">
+                        <div class = "day_in_week"> Sun </div>
+                        <div class = "day_in_week"> Mon</div>
+                        <div class = "day_in_week"> Tue </div>
+                        <div class = "day_in_week"> Wed </div>
+                        <div class = "day_in_week"> Thu </div>
+                        <div class = "day_in_week"> Fri </div>
+                        <div class = "day_in_week"> Sat </div>
+		        <div class="clear"></div>
+                    </div>
+               
+                    <div id = "day_in_month_div" class = "bound_day_in_month">
+                    </div>
+                    </div>
+                </div>
+                </td>
+            </tr>
+            <!-- End Birthday -->
+            
+            <!-- Button redirect -->
+            <tr>
+                <td> </td>
+                <td>
+                    <div>    
+                        <button type = "button" id = "btn_submit" class = "button_submit" onClick = "post2()"> SUBMIT </button>
+                        <button type = "button" id = "btn_reload" class = "button_refresh" onClick = "reload()"> REFRESH </button>      
+                    </div>    
+                </td>
+            </tr>
+            <!-- End Button redirect-->
+        </table>
+        </form>
+    </body>
+</html>

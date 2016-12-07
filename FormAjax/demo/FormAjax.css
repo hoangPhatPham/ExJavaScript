@@ -1,0 +1,166 @@
+
+body{
+}
+.td_input {
+    height: 25px;
+    width: 255px;
+}
+.input_infomation{
+    height: 25px;
+    width: 255px;
+    border: 1px radius #B4EECC;
+}
+.error{
+    color: red;
+}
+.show_error{
+    color: red;
+    display: block;
+}
+
+table{
+}
+
+.tr_calendar{
+    width: 452px;
+}
+.button_submit{
+    height: 30px;
+    width: 65px;
+    background-color: #2471A3;
+    color: white;
+    border: 2px solid #BFE0F2;
+    border-radius: 2px;
+}
+.button_refresh{
+    width: 80px;
+    height: 30px;
+    background-color: #2471A3;
+    color: white;
+    margin-left: 20px;
+    border: 2px solid #BFE0F2;
+    border-radius: 2px;
+}
+// For Calendar
+.bound{
+    padding: 2px;
+    width: 600px;
+    height: 316px;
+}
+.pick{
+    padding-top: 2px;
+    margin-top: 2px;
+    margin-left: 2px;
+    height: 30px;
+    width: 205px;
+    background-color: white;
+    border: 1px #A6C8FF solid;
+    clear: both;
+}
+.img_choose{
+    width: 35px;
+    height: 35px;
+    float: left;
+    border-right: 1px solid #A6C8FF;
+    border-bottom: 1px solid #A6C8FF;
+    border-top: 1px solid #A6C8FF;
+}
+.direct{
+    clear: both;
+}
+
+.btn_direct{
+    float: left;
+    background-color: #A9CCE3;
+    margin: 2px;
+    width: 60px;
+    height: 30px;
+}
+.bound_day_in_week{
+    clear: both;
+}
+.day_in_week{
+    background-color: #BEBEBE;
+    width: 60px;
+    height: 30px;
+    font-size: 25px;
+    color: red;
+    float: left;
+    margin: 2px;
+    text-align: center;
+    padding-top: 2px;
+    font-weight: bold;
+}
+.clear {
+    clear:both;
+}
+.bound_day_in_month{
+    color: red;
+}
+.day_in_month{
+    background-color: #FBFCFC;
+    width: 60px;
+    height: 30px;	
+    margin: 2px;
+    float: left;
+    border: 1px solid white;
+}
+.btn{
+    background-color: #FFFFFF;
+    width: 60px;
+    height: 30px;
+    margin: 2px;
+    float: left;
+    border: 1px solid white;
+}
+.div{
+    background-color: black;
+    width: 60px;
+    height: 30px;
+    margin: 2px;
+    float: left;
+    border: 1px solid white;
+}
+select{
+    border: 1px solid #A6C8FF;
+    margin: 2px;
+    float: left;
+    height: 30px;
+}
+.select_month{
+    width: 124px;
+}
+.select_year{
+    width: 60px;
+}
+
+.hide{
+    display: none;
+    background-color: white;
+}
+.show{
+    width: 500px;
+    display: block;
+    background-color: white;
+}
+.today{
+    background-color: #00ACE6;
+    width: 60px;
+    height: 30px;
+    margin: 2px;
+    float: left;
+    border: 1px solid white;
+}
+textview{
+    font-weight: bold;
+    padding-top: 7px;
+    border-left: 1px solid #A6C8FF;
+    border-bottom: 1px solid #A6C8FF;
+    border-top: 1px solid #A6C8FF;
+    height: 28px;
+    margin-left: 2px;
+    width: 218px;
+    clear: both;
+    both;
+    float: left;
+}
