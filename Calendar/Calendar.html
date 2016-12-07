@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+    <head>
+        <title> Calendar </title>
+        <link rel = "stylesheet" href = "Calendar.css">
+        <script language = "javascript" src = "Calendar.js">
+        </script> 
+    </head>
+
+    <body onLoad = "LoadCbYear()">
+        <textview id = "text_date_time" onClick = "show_today()"> </textview>
+        <img src = "Image/choose.png" class = "img_choose" alt = "Choose Calendar" onClick = "show_today()"/>
+        <div class = "bound">
+           <div class = "hide" id = "bound_date_time">
+               <div class = "direct">    
+                   <img src = "Image/pre_month.png" class = "btn_direct" onClick = "back_year()" alt = "Quay về năm trước"/>
+                   <img src = "Image/pre_day.png" class = "btn_direct" onClick = "back_month()" alt = "Quay về tháng trước"/>
+                   <select id = "month" class = "select_month" onChange = "select_month()">
+                       <option value = "0"> January </option>
+                       <option value = "1"> February </option>
+                       <option value = "2"> March </option>
+                       <option value = "3"> April </option>
+                       <option value = "4"> May </option>
+                       <option value = "5"> June </option>
+                       <option value = "6"> July </option>
+                       <option value = "7"> August </option>
+                       <option value = "8"> September </option>
+                       <option value = "9"> October </option>
+                       <option value = "10"> November </option>
+                       <option value = "11"> December </option>
+                   </select>
+                   <select id = "year" class = "select_year" onChange = "select_year()">
+                   </select>
+               </div>
+               <img src = "Image/next_day.png" class = "btn_direct" onClick = "next_month()" alt = "Tới tháng sau"/>
+               <img src = "Image/next_month.png" class = "btn_direct" onClick = "next_year()" alt = "Tới năm sau"/>
+
+ 
+               <div class = "bound_day_in_week">
+                   <div class = "day_in_week"> Sun </div>
+                   <div class = "day_in_week"> Mon</div>
+                   <div class = "day_in_week"> Tue </div>
+                   <div class = "day_in_week"> Wed </div>
+                   <div class = "day_in_week"> Thu </div>
+                   <div class = "day_in_week"> Fri </div>
+                   <div class = "day_in_week"> Sat </div>
+		   <div class="clear"></div>
+               </div>
+               
+               <div id = "day_in_month_div" class = "bound_day_in_month">	
+               </div>
+           </div>
+        </div>
+    </body>
+</html>
