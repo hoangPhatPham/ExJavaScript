@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Game monters</title>
+		<link href="css/stylesheet.css" type="text/css" rel="stylesheet"/>
+		
+	</head>
+	<body>
+		<div id="content">
+			<div id="head">
+				<div id="head_left">		
+					<div>
+						<p class="float">Score:</p>
+						<p id="score_index"  class="float"></p>
+						<p class="float">Height score: </p>
+						<p class="float" id="height_score"></p>
+						<div class="clear"></div>
+					</div>
+					<div>
+						<p class="float">Heart:</p>
+						<p id="heart_index"  class="float"></p>
+						<div class="clear"></div>
+					</div>
+					<div>
+						<p  class="float">Speed:</p>
+						<p  class="float"></p>
+						<select onchange="speed_index()" id="speed_index" >
+							<option>Slow</option>
+							<option>Normal</option>
+							<option>Fast</option>
+						</select>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div id="head_right">
+					<div>
+						<p class="float" id="head_right_random">Random monters:</p>
+						<p id="random_monter_index" class="float"></p>
+						<div class="clear"></div>
+					</div>
+					<div>
+						<div class="icon" id="boom" onclick="boom_click()"></div>
+						<div class="icon" id="stop" onclick="stop_click()"></div>
+						<div class="icon" id="pause" onclick="pau_click()"></div>
+						<div class="icon" id="restart" onclick="un_pau()"></div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="body_game">
+				<script src="js/JsMonster.js" type="text/javascript"></script>
+			</div>
+		</div>
+	</body>
+</html>

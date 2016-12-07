@@ -1,0 +1,72 @@
+﻿#content {
+	margin:0 auto 0 auto;
+	border:1px solid blue;
+	width:600px;
+	height:650px;
+	background-color: black;
+}
+#head {
+	width:598px;
+	height:90px;
+	background-color:#091138;	
+	font-size:1em;
+	color:white;
+}
+#head_left {
+	width:290px;
+	margin-left:10px;	
+	float:left;
+}
+img {
+	margin-left:2px;
+}
+
+#head_right {
+	width:280px;
+	margin-right:10px;
+	float:right;
+}
+#head_right_random {
+	width:120px;
+}
+#random_monter_index {
+	width:20px;
+}
+#speed_index {
+	margin-top:5px;
+}
+.icon {
+	width:40px;
+	height:40px;
+	margin-left:10px;
+	float:left;
+	font-size:2em;
+	color:blue;
+	text-align:center;
+	font-weight:bold;
+}
+p {
+	height:15px;
+	margin:5px;
+}
+
+#boom {
+	background-image:url("../img/Boom.png");
+	
+}
+#pause {
+	background-image:url("../img/Pause.png");
+}
+#stop {
+	background-image:url("../img/Stop.png");
+}
+#restart {
+	background-image:url("../img/Replay.png");
+}
+.clear {
+	clear:both;
+}
+.float {
+	float:left;
+        
+}
